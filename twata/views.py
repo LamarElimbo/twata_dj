@@ -1,5 +1,7 @@
 # twata/views.py
 from django.views.generic import TemplateView
+import sys
+sys.path.append("./scripts/")
 import getGraphScript
 import datetime
 

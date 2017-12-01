@@ -68,7 +68,7 @@ p, h3, .page-header{
     z-index:25;
 }
 
-#xLabelArea {
+.xLabelArea {
     position: relative;
     bottom: 10px;
     height: 20px;

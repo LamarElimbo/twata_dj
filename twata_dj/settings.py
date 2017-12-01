@@ -54,8 +54,16 @@ ROOT_URLCONF = 'twata_dj.urls'
 
 TEMPLATES = [
     {
+        'BACKEND': 'django.template.backends.jinja2.Jinja2',
+        'DIRS': [os.path.join(BASE_DIR, 'templates/jinja2')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'environment': 'twata_dj.jinja2.Environment'
+        },
+    },
+    {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
