@@ -1,4 +1,4 @@
-{% extends "_skeleton.html" %}
+{% extends "twata/_skeleton.html" %}
 {% block title %}Lamar's Web Apps - Twata{% endblock %}
 {% block content %}
     <h1 class="page-header">Welcome to Twata!</h1>
@@ -27,7 +27,7 @@
                             .enter().append("rect")
                                   .attr("class", "bar")
                                   .attr("height", function(d, i) {return (400*d/graphHeight)})
-                                  .attr("width","(100/num_cats -10)%")
+                                  .attr("width", 100/num_cats - 10 + "%")
                                   .attr("z-index","80")
                                   .attr("x", function(d, i) {return 100/num_cats * i + 5 + "%"})
                                   .attr("y", function(d, i) {return 400 - (400*d/graphHeight)});
