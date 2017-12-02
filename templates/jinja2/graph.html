@@ -1,4 +1,4 @@
-{% extends "_skeleton_template.html" %}
+{% extends "_skeleton.html" %}
 {% block title %}Lamar's Web Apps - Twata{% endblock %}
 {% block content %}
     <h1 class="page-header">Welcome to Twata!</h1>
@@ -13,7 +13,7 @@
             <div class="graph" id="pos_graph">
 
                 <script>
-                    var dataArray = {{pos_latestScores_ordered}}; var graphHeight = {{pos_graphHeight}};
+                    var dataArray = {{pos_latest_scores_ordered}}; var graphHeight = {{pos_graph_height}}; var num_cats = {{x_cats | count}};
                     var svg = d3.select("#pos_graph").append("svg")
                                   .attr("height","400px")
                                   .attr("width","100%")
@@ -27,9 +27,9 @@
                             .enter().append("rect")
                                   .attr("class", "bar")
                                   .attr("height", function(d, i) {return (400*d/graphHeight)})
-                                  .attr("width","{{100/x_cats | count - 10 }}%")
+                                  .attr("width","(100/num_cats -10)%")
                                   .attr("z-index","80")
-                                  .attr("x", function(d, i) {return 100/{{x_cats | count}} * i + 5 + "%"})
+                                  .attr("x", function(d, i) {return 100/num_cats * i + 5 + "%"})
                                   .attr("y", function(d, i) {return 400 - (400*d/graphHeight)});
 
                         svg.selectAll("text")
@@ -38,10 +38,10 @@
                             .text(function(d) {return d})
                                    .attr("class", "text")
                                    .attr("z-index","90")
-                                   .attr("x", function(d, i) {return 100/{{x_cats | count}} * i + 7 + "%"})
+                                   .attr("x", function(d, i) {return 100/num_cats * i + 7 + "%"})
                                    .attr("y", function(d, i) {return 420 - (400*d/graphHeight)});
                 </script>
-                <div id='xLabelArea'>
+                <div class='xLabelArea'>
                     {% set num_cats = x_cats | count %}
                     {% set cat_num = 0 %}
                     {% for category in x_cats %}
@@ -55,7 +55,7 @@
             <center><h3>Negative Tweet Count</h3></center>
             <div class="graph" id="neg_graph">
                 <script>
-                    var dataArray = {{neg_latestScores_ordered}}; var graphHeight = {{neg_graphHeight}};
+                    var dataArray = {{neg_latest_scores_ordered}}; var graphHeight = {{neg_graph_height}}; var num_cats = {{x_cats | count}};
                     var svg = d3.select("#neg_graph").append("svg")
                                   .attr("height","400px")
                                   .attr("width","100%")
@@ -69,9 +69,9 @@
                             .enter().append("rect")
                                   .attr("class", "bar")
                                   .attr("height", function(d, i) {return (400*d/graphHeight)})
-                                  .attr("width","{{100/num_cats - 10 }}%")
+                                  .attr("width", 100/num_cats - 10 + "%")
                                   .attr("z-index","80")
-                                  .attr("x", function(d, i) {return 100/{{x_cats | count}} * i + 5 + "%"})
+                                  .attr("x", function(d, i) {return 100/num_cats * i + 5 + "%"})
                                   .attr("y", function(d, i) {return 400 - (400*d/graphHeight)});
 
                         svg.selectAll("text")
@@ -80,10 +80,10 @@
                             .text(function(d) {return d})
                                    .attr("class", "text")
                                    .attr("z-index","90")
-                                   .attr("x", function(d, i) {return 100/{{x_cats | count}} * i + 7 + "%"})
+                                   .attr("x", function(d, i) {return 100/num_cats * i + 7 + "%"})
                                    .attr("y", function(d, i) {return 420 - (400*d/graphHeight)});
                 </script>
-                <div id='xLabelArea'>
+                <div class='xLabelArea'>
                     {% set num_cats = x_cats | count %}
                     {% set cat_num = 0 %}
                     {% for category in x_cats %}
@@ -108,8 +108,8 @@
         <div class="col-xs-11 col-md-11 maintext">
             <center><h3>Timeline Tweet Count</h3></center>
             <div class="graph" id="line_graph"><script>
-                    var negDataArray = {{neg_latestScores_ordered}}; var graphHeight = {{neg_graphHeight}}>{{pos_graphHeight}}?{{neg_graphHeight}}:{{pos_graphHeight}};
-                    var posDataArray = {{pos_latestScores_ordered}};
+                    var negDataArray = {{neg_latest_scores_ordered}}; var graphHeight = {{neg_graph_height}}>{{pos_graph_height}}?{{neg_graph_height}}:{{pos_graph_height}};
+                    var posDataArray = {{pos_latest_scores_ordered}}; var num_cats = {{x_cats | count}};
                     var svg = d3.select("#line_graph").append("svg")
                                   .attr("height","400px")
                                   .attr("width","100%")
@@ -124,9 +124,9 @@
                                 .attr("class", "line")
                                 .attr("stroke","#ffd5d6")
                                 .attr("z-index","70")
-                                .attr("x1", function(d, i) { var prevData = i>0?i-1:0; return i>0?100/{{x_cats | count}} * prevData + 6.5 + "%": 0;})
+                                .attr("x1", function(d, i) { var prevData = i>0?i-1:0; return i>0?100/num_cats * prevData + 6.5 + "%": 0;})
                                 .attr("y1", function(d, i) { var prevData = i>0?negDataArray[i-1]:0; return 403 - (400*prevData/graphHeight)})
-                                .attr("x2", function(d, i) { return 100/{{x_cats | count}} * i + 6.5 + "%"})
+                                .attr("x2", function(d, i) { return 100/num_cats * i + 6.5 + "%"})
                                 .attr("y2", function(d, i) { return 403 - (400*d/graphHeight)});
 
                         svg.selectAll('posLine')
@@ -135,9 +135,9 @@
                                 .attr("class", "line")
                                 .attr("stroke","#9fe7f5")
                                 .attr("z-index","70")
-                                .attr("x1", function(d, i) { var prevData = i>0?i-1:0; return i>0?100/{{x_cats | count}} * prevData + 6.5 + "%": 0;})
+                                .attr("x1", function(d, i) { var prevData = i>0?i-1:0; return i>0?100/num_cats * prevData + 6.5 + "%": 0;})
                                 .attr("y1", function(d, i) { var prevData = i>0?posDataArray[i-1]:0; return 403 - (400*prevData/graphHeight)})
-                                .attr("x2", function(d, i) { return 100/{{x_cats | count}} * i + 6.5 + "%"})
+                                .attr("x2", function(d, i) { return 100/num_cats * i + 6.5 + "%"})
                                 .attr("y2", function(d, i) { return 403 - (400*d/graphHeight)});
 
                         svg.selectAll("negCircle")
@@ -147,7 +147,7 @@
                                   .attr("fill", "red")
                                   .attr("r", "10")
                                   .attr("z-index","80")
-                                  .attr("cx", function(d, i) {return 100/{{x_cats | count}} * i + 7 + "%"})
+                                  .attr("cx", function(d, i) {return 100/num_cats * i + 7 + "%"})
                                   .attr("cy", function(d, i) {return 400 - (400*d/graphHeight)});
 
                         svg.selectAll("posCircle")
@@ -157,7 +157,7 @@
                                   .attr("fill", "blue")
                                   .attr("r", "10")
                                   .attr("z-index","80")
-                                  .attr("cx", function(d, i) {return 100/{{x_cats | count}} * i + 7 + "%"})
+                                  .attr("cx", function(d, i) {return 100/num_cats * i + 7 + "%"})
                                   .attr("cy", function(d, i) {return 400 - (400*d/graphHeight)});
 
                 </script>

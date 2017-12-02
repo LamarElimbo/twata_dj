@@ -27,6 +27,7 @@ def get_context_data(self, **kwargs):
 
     current_date = datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y")
 
+    context['css_source='] = 'static/app.css'
     context['date'] = current_date
     context['neg_latest_scores_ordered'] = neg_scores
     context['neg_graph_height'] = neg_height
