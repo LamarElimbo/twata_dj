@@ -3,7 +3,8 @@ import os
 
 
 def getXCats():
-    currentScores = open('sentimentClassifier/xScores.pkl', 'rb')
+    print('current classify dir: ', os.getcwd())
+    currentScores = open('/Users/Customer/Developer/webApps/twata_dj/twata/xScores.pkl', 'rb')
     negScores, posScores = pickle.load(currentScores)
     currentScores.close()
     
@@ -12,8 +13,8 @@ def getXCats():
     return x_keys_ordered
 
 def getNegScript():
-    print('current dir: ', os.getcwd())
-    currentScores = open('sentimentClassifier/xScores.pkl', 'rb')
+    print('current classify dir: ', os.getcwd())
+    currentScores = open('/Users/Customer/Developer/webApps/twata_dj/twata/xScores.pkl', 'rb')
     negScores, posScores = pickle.load(currentScores)
     currentScores.close()
     
@@ -29,8 +30,8 @@ def getNegScript():
     return neg_latestScores_ordered, neg_graphHeight
 
 def getPosScript():
-    
-    currentScores = open('sentimentClassifier/xScores.pkl', 'rb')
+    print('current classify dir: ', os.getcwd())
+    currentScores = open('/Users/Customer/Developer/webApps/twata_dj/twata/xScores.pkl', 'rb')
     negScores, posScores = pickle.load(currentScores)
     currentScores.close()
     

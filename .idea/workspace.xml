@@ -2,26 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae840a46-6b6b-4c5e-8141-b4fd1e18ac2b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/classifyTweet.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/getGraphScript.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/scoreAdjuster.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/sentimentClassifier/.ipynb_checkpoints/classifierTrainer-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/sentimentClassifier/dump.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/sentimentClassifier/featureList.pkl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/sentimentClassifier/savedNBClassifier.pkl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/sentimentClassifier/xScores.pkl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/tweetProcessor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/tweetStreamer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/twitter_creds.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/jinja2/_skeleton.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/jinja2/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/jinja2/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/jinja2/graph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/jinja2/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/twata/sentimentClassifier/.ipynb_checkpoints/classifierTrainer-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/twata/sentimentClassifier/dump.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/twata/sentimentClassifier/featureList.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/twata/sentimentClassifier/savedNBClassifier.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/twata/sentimentClassifier/xScores.pkl" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twata/urls.py" afterPath="$PROJECT_DIR$/twata/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twata/classifyTweet.py" afterPath="$PROJECT_DIR$/twata/classifyTweet.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twata/getGraphScript.py" afterPath="$PROJECT_DIR$/twata/getGraphScript.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twata/views.py" afterPath="$PROJECT_DIR$/twata/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twata_dj/settings.py" afterPath="$PROJECT_DIR$/twata_dj/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graph.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twata/jinja2/twata/graph.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="237">
@@ -81,8 +70,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twata/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="39" />
               <folding>
                 <element signature="e#17#52#0" expanded="true" />
               </folding>
@@ -90,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getGraphScript.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getGraphScript.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twata/getGraphScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-282">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="75" lean-forward="false" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -135,9 +124,11 @@
         <option value="$PROJECT_DIR$/twata/templates/twata/graph.html" />
         <option value="$PROJECT_DIR$/twata/scripts/getGraphScript.py" />
         <option value="$PROJECT_DIR$/twata/urls.py" />
-        <option value="$PROJECT_DIR$/twata/views.py" />
         <option value="$PROJECT_DIR$/twata_dj/settings.py" />
         <option value="$PROJECT_DIR$/twata/jinja2/twata/graph.html" />
+        <option value="$PROJECT_DIR$/twata/views.py" />
+        <option value="$PROJECT_DIR$/twata/classifyTweet.py" />
+        <option value="$PROJECT_DIR$/twata/getGraphScript.py" />
       </list>
     </option>
   </component>
@@ -172,19 +163,6 @@
             <path>
               <item name="twata_dj" type="b2602c69:ProjectViewProjectNode" />
               <item name="twata_dj" type="462c0819:PsiDirectoryNode" />
-              <item name="twata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twata_dj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twata_dj" type="462c0819:PsiDirectoryNode" />
-              <item name="twata" type="462c0819:PsiDirectoryNode" />
-              <item name="jinja2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twata_dj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twata_dj" type="462c0819:PsiDirectoryNode" />
-              <item name="twata" type="462c0819:PsiDirectoryNode" />
-              <item name="jinja2" type="462c0819:PsiDirectoryNode" />
               <item name="twata" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -505,26 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twata/getGraphScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twata/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#17#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twata_dj/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -549,6 +507,44 @@
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twata/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twata/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <element signature="e#17#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twata/classifyTweet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twata/getGraphScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="75" lean-forward="false" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -5,7 +5,6 @@ import settings
 
 def classifier(tweet):
     
-    os.chdir('../sentimentClassifier')
     with open('savedNBClassifier.pkl', 'rb') as f:
         NBClassifier = pickle.load(f)
         
