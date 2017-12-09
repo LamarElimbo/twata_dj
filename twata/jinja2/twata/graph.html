@@ -1,14 +1,15 @@
-{% extends "twata/_skeleton.html" %}
+{% extends "twata/_skeleton2_template.html" %}
 {% block title %}Lamar's Web Apps - Twata{% endblock %}
 {% block content %}
+<div class="container">
     <h1 class="page-header">Welcome to Twata!</h1>
     <p class="lead">Twitter data collection - New topic every week</p>
     <p style="text-align:left; position:relative; bottom:10px; left:5px">
         <span style="font-size:15pt;"><strong>Graph started collecting tweets: </strong>{{date}}</span>
     </p>
 
-    <div class="row">
-        <div class="col-xs-11 col-md-5 maintext">
+    <div class="row justify-content-between">
+        <div class="col-xs-11 col-md-5">
             <center><h3>Positive Tweet Count</h3></center>
             <div class="graph" id="pos_graph">
 
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-11 col-md-5 col-md-offset-1 maintext">
+        <div class="col-xs-11 col-md-5">
             <center><h3>Negative Tweet Count</h3></center>
             <div class="graph" id="neg_graph">
                 <script>
@@ -95,17 +96,17 @@
         </div>
     </div>
     <div class="row justify-content-between">
-        <div class="col-xs-11 col-md-5 maintext">
+        <div class="col-xs-11 col-md-5">
           <center><h3>Positive Tweets</h3></center>
             <div class="graph"></div>
         </div>
-        <div class="col-xs-11 col-md-5 col-md-offset-1 maintext">
+        <div class="col-xs-11 col-md-5">
           <center><h3>Negative Tweets</h3></center>
             <div class="graph"></div>
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-xs-11 col-md-11 maintext">
+        <div class="col-xs-11 col-md-11">
             <center><h3>Timeline Tweet Count</h3></center>
             <div class="graph" id="line_graph"><script>
                     var negDataArray = {{neg_latest_scores_ordered}}; var graphHeight = {{neg_graph_height}}>{{pos_graph_height}}?{{neg_graph_height}}:{{pos_graph_height}};
@@ -162,8 +163,7 @@
 
                 </script>
             </div>
-            #create a dictionary of lists including the date, num pos tweets and num neg tweets
-            #https://bl.ocks.org/mbostock/3883245
         </div>
     </div>
+</div>
 {% endblock %}
