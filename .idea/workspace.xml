@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae840a46-6b6b-4c5e-8141-b4fd1e18ac2b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/d3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twata/jinja2/twata/_skeleton.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twata/jinja2/twata/graph.html" afterPath="$PROJECT_DIR$/twata/jinja2/twata/graph.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twata/urls.py" afterPath="$PROJECT_DIR$/twata/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twata/views.py" afterPath="$PROJECT_DIR$/twata/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,13 +70,13 @@
       <file leaf-file-name="graph.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twata/jinja2/twata/graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="167" column="6" lean-forward="false" selection-start-line="167" selection-start-column="6" selection-end-line="167" selection-end-column="6" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1512791410000" expanded="false" signature="283:340" ph="..." />
-                <marker date="1512791410000" expanded="false" signature="364:379" ph="..." />
-                <marker date="1512791410000" expanded="false" signature="4998:5056" ph="..." />
+                <marker date="1512791782000" expanded="false" signature="232:289" ph="..." />
+                <marker date="1512791782000" expanded="false" signature="313:328" ph="..." />
+                <marker date="1512791782000" expanded="false" signature="4947:5005" ph="..." />
               </folding>
             </state>
           </provider>
@@ -326,9 +320,9 @@
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1512791410000" expanded="false" signature="283:340" ph="..." />
-            <marker date="1512791410000" expanded="false" signature="364:379" ph="..." />
-            <marker date="1512791410000" expanded="false" signature="4998:5056" ph="..." />
+            <marker date="1512791782000" expanded="false" signature="232:289" ph="..." />
+            <marker date="1512791782000" expanded="false" signature="313:328" ph="..." />
+            <marker date="1512791782000" expanded="false" signature="4947:5005" ph="..." />
           </folding>
         </state>
       </provider>
@@ -545,13 +539,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twata/jinja2/twata/graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="167" column="6" lean-forward="false" selection-start-line="167" selection-start-column="6" selection-end-line="167" selection-end-column="6" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1512791410000" expanded="false" signature="283:340" ph="..." />
-            <marker date="1512791410000" expanded="false" signature="364:379" ph="..." />
-            <marker date="1512791410000" expanded="false" signature="4998:5056" ph="..." />
+            <marker date="1512791782000" expanded="false" signature="232:289" ph="..." />
+            <marker date="1512791782000" expanded="false" signature="313:328" ph="..." />
+            <marker date="1512791782000" expanded="false" signature="4947:5005" ph="..." />
           </folding>
         </state>
       </provider>
